@@ -7,7 +7,39 @@
     tools:context=".scrollView">
 
 
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="Ilimitados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="super recarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="Mensajes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="Redes sociales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="Llamadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </HorizontalScrollView>
     <ListView
+        android:layout_below="@+id/horizontal_scroll"
         android:id="@+id/list_view2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -87,4 +87,7 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this,scrollView::class.java)
         startActivity(i)
     }
+    fun clearEdit(view: View){
+        et_num.setText("")
+    }
 }
